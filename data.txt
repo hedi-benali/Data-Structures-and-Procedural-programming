@@ -1,0 +1,157 @@
+PROBLEM 1
+
+
+ALGO sum_elements
+
+var:
+i:int
+test:bolean
+t1,t2: array_of_int
+sum:int
+
+sum=0
+for i from 0 to length.t1 -1 do 
+
+test=included(t[i],t2)
+if not test
+
+sum=t1[i]+sum
+
+end if 
+  end for
+
+for i from 0 to length.t2 -1 do
+
+test=included(t2[i],t1)
+if not test
+
+sum= t2[i] + sum 
+end if 
+  end for
+    Return sum
+
+END
+
+--------------------------------------
+
+function_included (val:int,t:array)
+
+var
+i=int
+
+Begin
+
+for i from  to t.length-1 do
+
+if t[i] =val
+
+ return true
+  enf if
+    end for
+
+return false
+          End
+
+------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+PROBLEM 2
+
+Procedure produit_scalar (v1: arra_of_float, v2: array_of_float,var s:float)
+
+var i=int
+s=0
+
+Begin
+for i from 0 to v1.legnt -1 do 
+
+s= s+v1[i].v2[i]
+
+end for 
+end
+
+--------------
+
+algo:
+
+var
+
+ps: float
+v1,v2: array_of_float[]
+
+Begin 
+
+if(v1.length<> v2.length)
+
+write ("not orthog")
+Exit()
+
+end if
+
+----------
+ps=0
+produit_scalar(v1,v2,ps)
+
+if (ps=0)  do
+
+write("orthog")
+
+else
+ write ("not orthog")
+   end if 
+end
+
+---------------------------------------------------------------------------
+
+function: produit_scalar (v1: arra_of_float, v2: array_of_float,var s:float)
+
+var i=int
+s: float
+s=0
+
+Begin
+for i from 0 to v1.legnt -1 do 
+
+s= s+v1[i].v2[i]
+
+end for 
+ return s
+
+algo:
+
+var
+
+ps: float
+v1,v2: array_of_float[]
+
+Begin 
+
+if(v1.length<> v2.length)
+
+write ("not orthog")
+Exit()
+
+end if
+
+----------
+ps=0
+produit_scalar(v1,v2)
+
+if (ps=0)  do
+
+write("orthog")
+
+else
+ write ("not orthog")
+   end if 
+end
+
